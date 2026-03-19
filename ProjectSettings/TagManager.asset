@@ -8,6 +8,10 @@ TagManager:
   - Bullet
   - above_object1
   - above_object2
+  - Small_enimie
+  - gun_enimie
+  - Boss_enimie
+  - Players_bullet
   layers:
   - Default
   - TransparentFX
@@ -16,7 +20,7 @@ TagManager:
   - Water
   - UI
   - Player1
-  - Player2/CPU/AI
+  - Mobs
   - bombs_falling
   - player_bullets
   - 

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ammo_deletion : MonoBehaviour
+public class Players_bullet_deleting : MonoBehaviour
 {
 
     public float timer = 5f;

@@ -15,12 +15,11 @@ GameObject:
   - component: {fileID: 8584583518316713780}
   - component: {fileID: 8163603518734518165}
   - component: {fileID: 3315832708316925892}
-  - component: {fileID: 2280819227105166606}
-  - component: {fileID: 4311556499036448091}
   - component: {fileID: 8453336771924621008}
+  - component: {fileID: 8188892979225429632}
   m_Layer: 7
   m_Name: Enimie
-  m_TagString: Untagged
+  m_TagString: Small_enimie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -177,38 +176,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2280819227105166606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1840216411376380906}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 167439438bef67548ac61c955c0c81a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::bullet_collection
-  reload: 0
---- !u!114 &4311556499036448091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1840216411376380906}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a335a6d218ca413489c9fb03a718f302, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::bullet_collection_player2
-  reload: 0
 --- !u!114 &8453336771924621008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,3 +196,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::followingplayer
   player: {fileID: 0}
   speed: 5
+--- !u!114 &8188892979225429632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840216411376380906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03fc0f86ee95b58489549f9d451fbcc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player_killing_enimies
+  player_bullet: {fileID: 0}

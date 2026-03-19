@@ -20,8 +20,8 @@ public class playerhsooting : MonoBehaviour
             
         }
         
-        //.wasPressedThisFrame   triggered once on click
-        //.wasReleasedThisFrame  triggered once on release
+        //.wasPressedThisFrame   click to make event
+        //.wasReleasedThisFrame  when click button lets go it will shoot not this sis not needed
         //.isPressed     when mouse is being hold down
         
         
