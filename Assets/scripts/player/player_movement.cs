@@ -13,7 +13,7 @@ public class player_movement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        player1.freezeRotation = true; // this stops it from tripping down when rotating can can also do it from inprector in Rigidbody in constraints Freeze Rotation
     }
 
     // Update is called once per frame

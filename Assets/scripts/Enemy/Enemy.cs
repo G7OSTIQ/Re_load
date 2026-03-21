@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 
 
     public int score = 10;
+    public int powerup_score = 20;
     public static int player_total_score = 0; //Static here is needed for the score will be updated as there as a bug where it was only staying at 10
     public TMP_Text Player_score;
     
@@ -30,7 +31,7 @@ public class Enemy : MonoBehaviour
             Destroy(other.gameObject);
             Destroy(gameObject);
            
-        }
+        } 
         
     }
     

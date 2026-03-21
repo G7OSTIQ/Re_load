@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class bullet_deleting : MonoBehaviour
+public class Power_up_Deleting : MonoBehaviour
 {
     public float timer = 5f;
 

@@ -30,6 +30,7 @@ public class deleting_bombs_when_touching : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Destroy(other.gameObject);
+            Destroy(gameObject);
         }
     }
 }

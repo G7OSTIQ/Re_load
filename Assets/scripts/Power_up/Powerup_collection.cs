@@ -30,7 +30,7 @@ public class bullet_collection : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Bullet"))
+        if (other.gameObject.CompareTag("Powerup"))
         {
             powerupActive = true;
             time = 10f; //This starts timer once player touches the powerup
