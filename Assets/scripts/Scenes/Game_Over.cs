@@ -13,7 +13,7 @@ public class Game_Over : MonoBehaviour
     void Start()
     {
         gameover = false;
-        gameoverScreen.SetActive(false); //we don't want to show it to the player when teh game stars
+        gameoverScreen.SetActive(false); //we don't want to show it to the player when the game stars
     }
 
     // Update is called once per frame

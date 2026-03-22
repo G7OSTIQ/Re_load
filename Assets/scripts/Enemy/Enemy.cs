@@ -23,9 +23,11 @@ public class Enemy : MonoBehaviour
         {
             Destroy(other.gameObject);
             Game_Over.gameover = true; //once player is dead the gameover screen will show.
+            GameObject.Find("Timer").SetActive(false); // set the timer and score hidden 
+            GameObject.Find("Score").SetActive(false);
         }
         
-        //destory bullet and kills enemy
+        //destory bullet and kills enemy and scores
         if (other.CompareTag("Players_bullet"))
         {
             if (Powerup_collection.powerupActive)
@@ -36,7 +38,7 @@ public class Enemy : MonoBehaviour
             {
                 player_total_score += score;
             }
-
+            
             Player_score.text = "Score: " + player_total_score;
             
             if (!Powerup_collection.powerupActive)// If powerup is collected the bullet will stay
