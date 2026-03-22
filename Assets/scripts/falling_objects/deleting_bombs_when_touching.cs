@@ -32,6 +32,8 @@ public class deleting_bombs_when_touching : MonoBehaviour
             Destroy(other.gameObject);
             Destroy(gameObject);
             Game_Over.gameover = true;
+            GameObject.Find("Timer").SetActive(false); // set the timer and score hidden 
+            GameObject.Find("Score").SetActive(false);
         }
     }
 }
