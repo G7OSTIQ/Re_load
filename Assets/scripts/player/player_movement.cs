@@ -7,11 +7,14 @@ public class player_movement : MonoBehaviour
     public float jumpingspeed = 5f;
     public Rigidbody player1;
     private Vector3 movement;
+    private Animator myanimation;
     //private bool playerTouchGround = false;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        
+        myanimation = GetComponent<Animator>();
         player1.freezeRotation = true; // this stops it from tripping down when rotating can can also do it from inprector in Rigidbody in constraints Freeze Rotation
         player1.linearVelocity = Vector3.zero;
         Time.timeScale = 1f;             
@@ -77,6 +80,12 @@ public class player_movement : MonoBehaviour
         player1.linearVelocity = new Vector3(
             movement.x * speed, player1.linearVelocity.y, movement.z * speed
         );
+        
+        float velocityX = Mathf.Abs(player1.linearVelocity.x);
+        float velocityZ = Mathf.Abs(player1.linearVelocity.z);
+        float totalvelocity = velocityX + velocityZ;
+        
+        myanimation.SetFloat("movement", totalvelocity);
     }
 
     //private void OnCollisionEnter(Collision collision)
