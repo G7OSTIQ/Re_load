@@ -28,6 +28,13 @@ public class followingplayer : MonoBehaviour
         
         Vector3 chese = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
         transform.position = chese;
+        
+        Vector3 direction = player.position - transform.position;
+        direction.y = 0;
+        if (direction != Vector3.zero)
+        {
+            transform.rotation = Quaternion.LookRotation(direction);
+        }
 
     }
 }
