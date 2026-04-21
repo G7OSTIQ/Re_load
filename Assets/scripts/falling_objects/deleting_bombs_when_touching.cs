@@ -23,6 +23,9 @@ public class deleting_bombs_when_touching : MonoBehaviour
             boms_touching_ground = true;
             Destroy(gameObject);
         }
+        
+        
+        Destroy(gameObject); // need this so that it will delete it self if touching something else
     }
     
     private void OnTriggerEnter(Collider other)
