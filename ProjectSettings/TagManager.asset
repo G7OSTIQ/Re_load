@@ -9,11 +9,11 @@ TagManager:
   - above_object1
   - above_object2
   - Small_enimie
-  - gun_enimie
   - Boss_enimie
   - Players_bullet
   - Powerup
   - Power_up_spawner
+  - Bomb_enemy
   layers:
   - Default
   - TransparentFX

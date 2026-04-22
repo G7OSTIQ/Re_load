@@ -3,7 +3,7 @@ using UnityEngine;
 public class Powerup_collection : MonoBehaviour
 {
     public float time = 10f;
-    public float powerspeed = 25f;
+    public float powerspeed = 15f;
     public static bool powerupActive = false; // this needs to be static because it needs to share one piece of data
 
     private player_movement playermovement;

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Ememy_spawner : MonoBehaviour
 {
-    public GameObject Enemy;
+    public GameObject []Enemy;
     public Transform[] Emimies_spawner;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -16,6 +16,8 @@ public class Ememy_spawner : MonoBehaviour
     {
         int inside_list= Random.Range(0, Emimies_spawner.Length);
         Transform spawnPoint = Emimies_spawner[inside_list];
-        Instantiate(Enemy, spawnPoint.position, spawnPoint.rotation);
+        
+        int differentenemy = Random.Range(0, Enemy.Length);
+        Instantiate(Enemy[differentenemy], spawnPoint.position, spawnPoint.rotation);
     }
 }

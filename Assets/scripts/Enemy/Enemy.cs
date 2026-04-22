@@ -50,6 +50,12 @@ public class Enemy : MonoBehaviour
             {
                 Destroy(other.gameObject);
             }
+            
+            GameObject mainplayer = GameObject.FindWithTag("Player");
+            if (mainplayer != null)
+            {
+                mainplayer.transform.position = transform.position;
+            }
 
             Destroy(gameObject); // else it will  get destroyed
         }
