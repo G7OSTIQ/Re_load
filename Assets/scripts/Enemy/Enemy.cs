@@ -51,10 +51,17 @@ public class Enemy : MonoBehaviour
                 Destroy(other.gameObject);
             }
             
-            GameObject mainplayer = GameObject.FindWithTag("Player");
-            if (mainplayer != null)
+            
+            GameObject[] allEnemies = GameObject.FindGameObjectsWithTag("Small_enimie");
+            foreach (GameObject enemy in allEnemies)
             {
-                mainplayer.transform.position = transform.position;
+                Rigidbody rb = enemy.GetComponent<Rigidbody>();
+                if (rb != null)
+                {
+                    // Pushes each enemy away from the killed enemy position
+                    Vector3 pushDirection = enemy.transform.position - transform.position;
+                    rb.AddForce(pushDirection.normalized * 13f, ForceMode.Impulse);
+                }
             }
 
             Destroy(gameObject); // else it will  get destroyed

@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 4414984657431007570}
   - component: {fileID: 2455452472426077265}
   - component: {fileID: 3207854439849391518}
-  m_Layer: 0
+  - component: {fileID: 1106593071523423120}
+  m_Layer: 7
   m_Name: the folder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,6 +136,20 @@ CapsuleCollider:
   m_Height: 0.2996902
   m_Direction: 1
   m_Center: {x: 0.018079616, y: -0.00077060045, z: 0.056629587}
+--- !u!114 &1106593071523423120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116825431633780442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e701a45dd55d3e446a5eb70be04933d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::falling_shadow
+  shadowprefab: {fileID: 982261017627736832, guid: 255b2a9bf82b5944f9544eae73eeb434, type: 3}
+  groundY: 0
 --- !u!1 &3225875695889376194
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,7 +161,7 @@ GameObject:
   - component: {fileID: 5798808403617674285}
   - component: {fileID: 4269204344978424475}
   - component: {fileID: 5402577860030869870}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mesh381717428
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,7 +251,7 @@ GameObject:
   - component: {fileID: 7228102237822520872}
   - component: {fileID: 3141899016638856959}
   - component: {fileID: 6031052083972037498}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mesh932501492
   m_TagString: Untagged
   m_Icon: {fileID: 0}

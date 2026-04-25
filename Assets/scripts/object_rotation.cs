@@ -12,6 +12,13 @@ public class object_rotation : MonoBehaviour
        // Update is called once per frame
        void Update()
        {
-           transform.Rotate(Vector3.forward * rotatiospeed * Time.deltaTime);
+           if (gameObject.CompareTag("Powerup"))
+           {
+               transform.Rotate(Vector3.up * rotatiospeed * Time.deltaTime);
+           }
+           else
+           {
+               transform.Rotate(Vector3.forward * rotatiospeed * Time.deltaTime);
+           }
        }
 }

@@ -14,6 +14,19 @@ TagManager:
   - Powerup
   - Power_up_spawner
   - Bomb_enemy
+  - left_whole_platforms
+  - below_whole_platforms
+  - right_whole_platforms
+  - above_whole_platforms
+  - wall
+  - enemy_spawner1
+  - enemy_spawner2
+  - enemy_spawner3
+  - enemy_spawner4
+  - Power_up_spawner_2
+  - Power_up_spawner_3
+  - above_objects3
+  - above_objects_4
   layers:
   - Default
   - TransparentFX
@@ -25,8 +38,8 @@ TagManager:
   - Mobs
   - bombs_falling
   - player_bullets
-  - 
-  - 
+  - platforms
+  - Walls
   - 
   - 
   - 

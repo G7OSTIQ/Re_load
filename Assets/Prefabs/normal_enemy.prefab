@@ -279,6 +279,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 11eeb436c168aef488c8d06d59fa2cb5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8044454801140839204}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 11eeb436c168aef488c8d06d59fa2cb5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -5465899611973120549}
   m_SourcePrefab: {fileID: 100100000, guid: 11eeb436c168aef488c8d06d59fa2cb5, type: 3}
 --- !u!1 &1288623856331938476 stripped
 GameObject:
@@ -346,7 +349,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::followingplayer
   player: {fileID: 0}
-  speed: 5
+  smallspeed: 2
+  highspeed: 10
+  speedincrease: 1
+  timer_when_increase: 10
+  currentspeed: 0
 --- !u!114 &6128329899812278565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,3 +392,17 @@ CapsuleCollider:
   m_Height: 2.1573563
   m_Direction: 1
   m_Center: {x: 0.48020434, y: -0.57867813, z: 0}
+--- !u!114 &-5465899611973120549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288623856331938476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5c52f08636f7994286d621d42221e5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::enemy_remover
+  timer: 20
+  maxtimer: 30

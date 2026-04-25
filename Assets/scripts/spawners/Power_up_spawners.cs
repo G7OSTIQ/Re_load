@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class bullet_spawners : MonoBehaviour
+public class Power_up_spawners : MonoBehaviour
 {
     //This is the powerup
     public GameObject bullet;
@@ -9,11 +9,11 @@ public class bullet_spawners : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        InvokeRepeating("SpawnBullet", 1f, 10f); //10 is there for the amout of time for a bullet to spawn
+        InvokeRepeating("SpawnPowerUP", 1f, 10f); //10 is there for the amout of time for a powerup will spawn
     }
 
     // Update is called once per frame
-    private void SpawnBullet()
+    private void SpawnPowerUP()
     {
         int inside_list= Random.Range(0, Bullet_spawner.Length);
         Transform spawnPoint = Bullet_spawner[inside_list];

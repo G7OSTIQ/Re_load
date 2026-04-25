@@ -19,6 +19,17 @@ public class bug_Enemy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        
+        
+        if (other.CompareTag("Player"))
+        {
+            Destroy(other.gameObject);
+            Game_Over.gameover = true;
+            GameObject.Find("Timer").SetActive(false);
+            GameObject.Find("Score").SetActive(false);
+        }
+        
+        
         if (other.CompareTag("Players_bullet"))
         {
             if (alreadyhit) return;

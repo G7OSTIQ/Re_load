@@ -6,12 +6,19 @@ public class followingplayer : MonoBehaviour
     //This what lets the enemy follow the player script
     
     public Transform player;
-    public float speed = 5f;
+    public float smallspeed = 2f;
+    public float highspeed = 8f;
+    public int speedincrease = 1;
+    public float timer_when_increase = 10f;
+    public float currentspeed;
+    private float timer = 0f;
     
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        
+        currentspeed = Random.Range(smallspeed, highspeed);
         
         GameObject findingplayer = GameObject.FindWithTag("Player");
         if (findingplayer != null)
@@ -26,7 +33,14 @@ public class followingplayer : MonoBehaviour
     {
         if (player == null) return;
         
-        Vector3 chese = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+        timer += Time.deltaTime;
+        if (timer >= timer_when_increase)
+        {
+            currentspeed += speedincrease;
+            timer = 0f;
+        }
+        
+        Vector3 chese = Vector3.MoveTowards(transform.position, player.position, currentspeed * Time.deltaTime);
         transform.position = chese;
         
         Vector3 direction = player.position - transform.position;

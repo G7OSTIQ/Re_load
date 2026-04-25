@@ -468,6 +468,7 @@ GameObject:
   - component: {fileID: 8606800315671477145}
   - component: {fileID: 8325884466957678897}
   - component: {fileID: 1262073259462616299}
+  - component: {fileID: -7238846388909433286}
   m_Layer: 7
   m_Name: Small_bug_enemy
   m_TagString: Bomb_enemy
@@ -554,7 +555,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::followingplayer
   player: {fileID: 0}
-  speed: 8
+  smallspeed: 2
+  highspeed: 11
+  speedincrease: 1
+  timer_when_increase: 10
+  currentspeed: 0
 --- !u!136 &8606800315671477145
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -614,6 +619,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Small_Bombs_enemy
   score: 5
   powerup_score: 10
+--- !u!114 &-7238846388909433286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4390484796053239110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5c52f08636f7994286d621d42221e5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::enemy_remover
+  timer: 20
+  maxtimer: 40
 --- !u!1 &4752336943167182721
 GameObject:
   m_ObjectHideFlags: 0

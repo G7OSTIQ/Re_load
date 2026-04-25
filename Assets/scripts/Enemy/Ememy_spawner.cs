@@ -8,7 +8,22 @@ public class Ememy_spawner : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        InvokeRepeating("SpawnEnemy", 2f, 4f); //wait 2 sec before enemy spawns when game stars
+        if (gameObject.CompareTag("enemy_spawner1")) 
+        {
+            InvokeRepeating("SpawnEnemy", 1f, 4f); 
+        }
+        else if(gameObject.CompareTag("enemy_spawner2"))
+        {
+            InvokeRepeating("SpawnEnemy",10f, 4f); 
+        }
+        else if(gameObject.CompareTag("enemy_spawner3"))
+        {
+            InvokeRepeating("SpawnEnemy",20f, 4f);
+        }
+        else if(gameObject.CompareTag("enemy_spawner4"))
+        {
+            InvokeRepeating("SpawnEnemy",30f, 4f); 
+        }
     }
 
     // Update is called once per frame

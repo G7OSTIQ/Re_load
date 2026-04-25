@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class object_falling : MonoBehaviour
+public class Group_enemy_spanwer : MonoBehaviour
 {
     
     //This will be set when it reach 30/60 sec pass the obejcts will start falling  
@@ -12,22 +12,23 @@ public class object_falling : MonoBehaviour
     void Start()
     {
 
-        if (gameObject.CompareTag("above_object1")) // will check which is above_object1 or 2
+        if (gameObject.CompareTag("enemy_spawner1")) 
         {
-            InvokeRepeating("Spawnobjects", 30f, 1f); //5 will be change to 30
+            InvokeRepeating("Spawnobjects", 1f, 1f); 
         }
-        else if(gameObject.CompareTag("above_object2"))
+        else if(gameObject.CompareTag("enemy_spawner2"))
         {
-            InvokeRepeating("Spawnobjects",60f, 1f); //10 will be change to 60
+            InvokeRepeating("Spawnobjects",10f, 1f); 
         }
-        else if(gameObject.CompareTag("above_objects3"))
+        else if(gameObject.CompareTag("enemy_spawner3"))
         {
-            InvokeRepeating("Spawnobjects",70f, 1f); 
+            InvokeRepeating("Spawnobjects",20f, 1f);
         }
-        else if(gameObject.CompareTag("above_objects_4"))
+        else if(gameObject.CompareTag("enemy_spawner4"))
         {
-            InvokeRepeating("Spawnobjects",80f, 1f); 
+            InvokeRepeating("Spawnobjects",30f, 1f); 
         }
+        
        
     }
 

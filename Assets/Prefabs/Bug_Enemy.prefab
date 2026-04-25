@@ -645,6 +645,7 @@ GameObject:
   - component: {fileID: 8648707279794144084}
   - component: {fileID: 4322213016197592035}
   - component: {fileID: 6431172294838569215}
+  - component: {fileID: 5966875664492758855}
   m_Layer: 7
   m_Name: Bug_Enemy
   m_TagString: Bomb_enemy
@@ -716,8 +717,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.4320867
-  m_Center: {x: 0, y: 0.6053827, z: 0}
+  m_Radius: 0.4710838
+  m_Center: {x: 0.0000000026511875, y: 0.6053804, z: 0.0389969}
 --- !u!114 &6479286511823740399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -731,7 +732,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::followingplayer
   player: {fileID: 0}
-  speed: 3
+  smallspeed: 2
+  highspeed: 10
+  speedincrease: 1
+  timer_when_increase: 10
+  currentspeed: 0
 --- !u!136 &8648707279794144084
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -751,10 +756,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 1.0679901
+  m_Radius: 0.43304604
+  m_Height: 1.06799
   m_Direction: 1
-  m_Center: {x: 0, y: 0.52491033, z: 0}
+  m_Center: {x: -0.0000000050743303, y: 0.5249052, z: -0.066953965}
 --- !u!114 &4322213016197592035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -794,6 +799,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5966875664492758855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5044390566753320545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5c52f08636f7994286d621d42221e5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::enemy_remover
+  timer: 20
+  maxtimer: 40
 --- !u!1 &5302388872209861112
 GameObject:
   m_ObjectHideFlags: 0

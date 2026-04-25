@@ -8,6 +8,7 @@ public class Game_Over : MonoBehaviour
     public GameObject gameoverScreen;
     public TMP_Text player_score;
     public static bool gameover = false; 
+    public Count_down_Timer countdowntimer;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,8 +23,13 @@ public class Game_Over : MonoBehaviour
         if (gameover)
         {
             gameoverScreen.SetActive(true);
-            player_score.text = "Score: " + Enemy.player_total_score; // finds the enemy script
             Time.timeScale = 0f;
+            
+            if (countdowntimer != null)
+            {
+                float timesurvived = 180f - countdowntimer.gameplay_timer;
+                player_score.text = "You survived: " + Mathf.FloorToInt(timesurvived) + " seconds!";
+            }
         }
     }
     
