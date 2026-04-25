@@ -717,8 +717,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.4710838
-  m_Center: {x: 0.0000000026511875, y: 0.6053804, z: 0.0389969}
+  m_Radius: 0.41485855
+  m_Center: {x: -0.0000000011421712, y: 0.60537577, z: -0.01722842}
 --- !u!114 &6479286511823740399
 MonoBehaviour:
   m_ObjectHideFlags: 0
