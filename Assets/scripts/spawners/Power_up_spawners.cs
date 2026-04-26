@@ -9,7 +9,7 @@ public class Power_up_spawners : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        InvokeRepeating("SpawnPowerUP", 1f, 10f); //10 is there for the amout of time for a powerup will spawn
+        InvokeRepeating("SpawnPowerUP", 1f, 10f); //10 is there for the amout of time for a powerup to spawn
     }
 
     // Update is called once per frame

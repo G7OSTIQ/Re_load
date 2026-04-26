@@ -41,35 +41,35 @@ public class bug_Enemy : MonoBehaviour
                 Destroy(other.gameObject);
             }
 
-            if (hp <= 0)  
-            {
-                if (Powerup_collection.powerupActive)
-                {
-                    Enemy.player_total_score += powerup_score;
-                }
-                else
-                {
-                    Enemy.player_total_score += score;
-                }
-
-                Player_score.text = "Score: " + Enemy.player_total_score;
-
-                for (int i = 0; i < small_enemy_count; i++)
-                {
-                    Vector3 small_bugs = new Vector3(
-                        transform.position.x + Random.Range(-1f, 1f),
-                        transform.position.y,
-                        transform.position.z + Random.Range(-1f, 1f)
-                    );
-                    Instantiate(small_enemy_prefab, small_bugs, Quaternion.identity);
-                }
-
-                Destroy(gameObject);
-            }
-            else
-            {
-                alreadyhit = false; 
-            }
+            // if (hp <= 0)  
+            // {
+            //     if (Powerup_collection.powerupActive)
+            //     {
+            //         Enemy.player_total_score += powerup_score;
+            //     }
+            //     else
+            //     {
+            //         Enemy.player_total_score += score;
+            //     }
+            //
+            //     Player_score.text = "Score: " + Enemy.player_total_score;
+            //
+            //     for (int i = 0; i < small_enemy_count; i++)
+            //     {
+            //         Vector3 small_bugs = new Vector3(
+            //             transform.position.x + Random.Range(-1f, 1f),
+            //             transform.position.y,
+            //             transform.position.z + Random.Range(-1f, 1f)
+            //         );
+            //         Instantiate(small_enemy_prefab, small_bugs, Quaternion.identity);
+            //     }
+            //
+            //     Destroy(gameObject);
+            // }
+            // else
+            // {
+            //     alreadyhit = false; 
+            // }
         }
     }
 }

@@ -579,10 +579,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.45293865
   m_Height: 1.0679901
   m_Direction: 1
-  m_Center: {x: 0, y: 0.52491033, z: 0}
+  m_Center: {x: 6.882184e-11, y: 0.5249102, z: -0.047061365}
 --- !u!95 &8325884466957678897
 Animator:
   serializedVersion: 7
@@ -612,7 +612,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4390484796053239110}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26aaff920861c08428f8649220406db1, type: 3}
   m_Name: 
