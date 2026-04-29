@@ -4,18 +4,17 @@ using UnityEngine.UI;
 
 public class player_movement : MonoBehaviour
 {
-    public float speed = 10f;
-    public float jumpingspeed = 5f;
+    public float speed = 10.5f;
     public Rigidbody player1;
     
-    [Header("Dash Settings")]
+    [Header("Dash_Settings")]
     public float dashspeed = 30f;     
     public float dashduration = 0.2f;  
     public float dashrecharge = 3f;   
     public int maxdashes = 3;   
     
     
-    [Header("Dash UI")]
+    [Header("Dash_UI")]
     public Image dashbar;    
     public Image dashbarcolor;      
 
@@ -96,6 +95,12 @@ public class player_movement : MonoBehaviour
        {
            StartCoroutine(Dash());
        }
+
+       if ((Keyboard.current.spaceKey.wasPressedThisFrame || Mouse.current.leftButton.wasPressedThisFrame) &&
+           currentdashes > 0 && !isdashing)
+       {
+           StartCoroutine(Dash());
+       }
        
        if (currentdashes < maxdashes)
        {
@@ -106,7 +111,8 @@ public class player_movement : MonoBehaviour
                rechargetimer = 0f;     
            }
        }
-
+       
+       movement.Normalize();
        UpdateDashUI();
         
     }
