@@ -773,7 +773,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 47eb7dc59d67d424f8502baeccaf20e7, type: 2}
+  - {fileID: 2100000, guid: 0d3a2e342fb45db439ee5963f55aac06, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1138,8 +1138,8 @@ Camera:
   m_GameObject: {fileID: 330585543}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1189,7 +1189,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.71138, y: 14.13375, z: -1.1796}
+  m_LocalPosition: {x: -0.71138, y: 17.13375, z: -1.1796}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2144,7 +2144,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 47eb7dc59d67d424f8502baeccaf20e7, type: 2}
+  - {fileID: 2100000, guid: 0d3a2e342fb45db439ee5963f55aac06, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3189,7 +3189,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 47eb7dc59d67d424f8502baeccaf20e7, type: 2}
+  - {fileID: 2100000, guid: 0d3a2e342fb45db439ee5963f55aac06, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3750,7 +3750,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 47eb7dc59d67d424f8502baeccaf20e7, type: 2}
+  - {fileID: 2100000, guid: 0d3a2e342fb45db439ee5963f55aac06, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3981,10 +3981,10 @@ PrefabInstance:
       addedObject: {fileID: 2119658641}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 74bb61fb9e908a1428c8ff67f27cf8cf, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2119658640}
+      addedObject: {fileID: 2119658646}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 74bb61fb9e908a1428c8ff67f27cf8cf, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2119658646}
+      addedObject: {fileID: 2119658647}
   m_SourcePrefab: {fileID: 100100000, guid: 74bb61fb9e908a1428c8ff67f27cf8cf, type: 3}
 --- !u!1 &1362065586
 GameObject:
@@ -4368,7 +4368,7 @@ MonoBehaviour:
     AngularDampingMode: 0
     RotationDamping: {x: 1, y: 1, z: 1}
     QuaternionDamping: 1
-  FollowOffset: {x: 0, y: 15, z: 0}
+  FollowOffset: {x: 0, y: 18, z: 0}
 --- !u!114 &1457587473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4421,7 +4421,7 @@ Transform:
   m_GameObject: {fileID: 1457587471}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.71138, y: 14.13375, z: -1.1796}
+  m_LocalPosition: {x: -0.71138, y: 17.13375, z: -1.1796}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6004,27 +6004,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 74bb61fb9e908a1428c8ff67f27cf8cf, type: 3}
   m_PrefabInstance: {fileID: 1355566851}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &2119658640
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119658639}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 0.66876733, z: 0.49884155}
-  m_Center: {x: 0, y: 0.52370775, z: 0.037701596}
 --- !u!114 &2119658641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6037,7 +6016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd66a9ad4043f6b4ca713a86dd07e230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::player_movement
-  speed: 10.5
+  speed: 11.5
   player1: {fileID: 2119658644}
   dashspeed: 30
   dashduration: 0.2
@@ -6127,6 +6106,29 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!136 &2119658647
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119658639}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.31149146
+  m_Height: 0.9075338
+  m_Direction: 1
+  m_Center: {x: 0.022856593, y: 0.4888516, z: 0.04955788}
 --- !u!1 &2136475667
 GameObject:
   m_ObjectHideFlags: 0
