@@ -46,7 +46,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture_1:
-        m_Texture: {fileID: 2800000, guid: 3b52b1502f07823489c612bea6414124, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture_2:
@@ -80,7 +80,7 @@ Material:
     - _Enable_Texture: 1
     - _Float: 0.509
     - _Opacity_Global: 1
-    - _Opacity_On_Centre: 0
+    - _Opacity_On_Centre: 1
     - _Opacity_On_Side: 1
     - _Power: 2
     - _QueueControl: 0
