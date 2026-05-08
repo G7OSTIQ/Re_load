@@ -732,7 +732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::followingplayer
   player: {fileID: 0}
-  smallspeed: 2
+  smallspeed: 3
   highspeed: 10
   speedincrease: 1
   timer_when_increase: 10

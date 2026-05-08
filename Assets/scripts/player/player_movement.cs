@@ -4,11 +4,11 @@ using UnityEngine.UI;
 
 public class player_movement : MonoBehaviour
 {
-    public float speed = 10.5f;
+    public float speed = 11.5f;
     public Rigidbody player1;
     
     [Header("Dash_Settings")]
-    public float dashspeed = 30f;     
+    public float dashspeed = 60f;     
     public float dashduration = 0.2f;  
     public float dashrecharge = 3f;   
     public int maxdashes = 3;   
@@ -141,7 +141,7 @@ public class player_movement : MonoBehaviour
         isdashing = true;
         currentdashes--;
 
-        Vector3 dashdir = movement != Vector3.zero ? movement : transform.forward;
+        Vector3 dashdir = movement != Vector3.zero ? movement.normalized : transform.forward;
         player1.linearVelocity = dashdir * dashspeed;
 
         yield return new WaitForSeconds(dashduration);
