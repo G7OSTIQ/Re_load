@@ -39,10 +39,7 @@ public class Powerup_collection : MonoBehaviour
             player_movement playerdash = GetComponent<player_movement>();
             if (playerdash != null)
             {
-                playerdash.currentdashes = Mathf.Min(
-                    playerdash.currentdashes + 1,
-                    playerdash.maxdashes
-                );
+                playerdash.currentdashes = Mathf.Min(playerdash.currentdashes + 1, playerdash.maxdashes);
             }
 
             Destroy(other.gameObject);

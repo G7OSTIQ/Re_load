@@ -140,11 +140,13 @@ public class player_movement : MonoBehaviour
     {
         isdashing = true;
         currentdashes--;
-
+        
+        
         Vector3 dashdir = movement != Vector3.zero ? movement.normalized : transform.forward;
         player1.linearVelocity = dashdir * dashspeed;
 
         yield return new WaitForSeconds(dashduration);
+        
         isdashing = false;
     }
     

@@ -96,14 +96,14 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 0.46740404, b: 2.670157, a: 0}
     - _Color_1: {r: 2.811218, g: 0, b: 2.9960785, a: 0}
-    - _Color_A: {r: 0, g: 0.010393143, b: 1, a: 1}
+    - _Color_A: {r: 1, g: 0.5, b: 0, a: 1}
     - _Color_B: {r: 0, g: 1.3401579, b: 8.991719, a: 0}
     - _Distort_Tile_XY: {r: 20, g: 20, b: 0, a: 0}
     - _Distortion_X_Y: {r: 0, g: 0, b: 0, a: 0}
     - _Emission_Color: {r: 0, g: 0, b: 0, a: 0}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
     - _Offset_Tex_2: {r: 1, g: 1, b: 0, a: 0}
-    - _Texture_1_Color: {r: 0, g: 0, b: 4, a: 1}
+    - _Texture_1_Color: {r: 0, g: 0, b: 3.9533496, a: 1}
     - _Texture_2D_Color: {r: 0, g: 11.984314, b: 8.282353, a: 0}
     - _Texture_2_Color: {r: 0, g: 7.237259, b: 16, a: 0}
     - _Tile_X_Y: {r: 15.14, g: 33.7, b: 0, a: 0}

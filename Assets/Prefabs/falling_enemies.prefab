@@ -164,6 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::deleting_bombs_when_touching
   boms_touching_ground: 0
+  fallingParticles: {fileID: 6645696507034386966, guid: b3c4fb53d8d3742458a2b381e99a8891, type: 3}
 --- !u!114 &6726247326121881078
 MonoBehaviour:
   m_ObjectHideFlags: 0
