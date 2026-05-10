@@ -28,9 +28,17 @@ public class Game_Over : MonoBehaviour
             if (countdowntimer != null)
             {
                 float timesurvived = 180f - countdowntimer.gameplay_timer;
-                player_score.text = "You survived: " + Mathf.FloorToInt(timesurvived) + " seconds!";
+                player_score.text = Mathf.FloorToInt(timesurvived) + " seconds!";
             }
         }
+    }
+    
+    public void GoToMainMenu()
+    {
+        Time.timeScale = 1f;
+        Powerup_collection.powerupActive = false;
+        gameover = false;
+        SceneManager.LoadScene("Main_Menu");
     }
     
     public void RestartGame()
