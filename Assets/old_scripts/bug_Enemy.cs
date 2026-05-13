@@ -10,11 +10,11 @@ public class bug_Enemy : MonoBehaviour
     public int hp = 5;
     private bool alreadyhit = false;
 
-    private TMP_Text Player_score;
+    //private TMP_Text Player_score;
 
     void Start()
     {
-        Player_score = GameObject.Find("Score").GetComponent<TMP_Text>();
+        //Player_score = GameObject.Find("Score").GetComponent<TMP_Text>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -26,7 +26,7 @@ public class bug_Enemy : MonoBehaviour
             Destroy(other.gameObject);
             Game_Over.gameover = true;
             GameObject.Find("Timer").SetActive(false);
-            GameObject.Find("Score").SetActive(false);
+            //GameObject.Find("Score").SetActive(false);
         }
         
         

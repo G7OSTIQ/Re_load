@@ -20,7 +20,7 @@ public class Small_Bug_enemy : MonoBehaviour
             Destroy(other.gameObject);
             Game_Over.gameover = true;
             GameObject.Find("Timer").SetActive(false);
-            GameObject.Find("Score").SetActive(false);
+            //GameObject.Find("Score").SetActive(false);
         }
 
         // if (other.CompareTag("Players_bullet"))

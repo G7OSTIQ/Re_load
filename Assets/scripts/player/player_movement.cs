@@ -23,6 +23,10 @@ public class player_movement : MonoBehaviour
     private bool isdashing = false;
     private float rechargetimer = 0f;
     
+    [Header("Audio")]
+    public AudioSource audiosource;
+    public AudioClip dashaudio;
+    
     
     private Animator myanimation;
     //private bool playerTouchGround = false;
@@ -117,6 +121,8 @@ public class player_movement : MonoBehaviour
         
     }
     
+    
+    //this changes the colour of the dashing ui
     void UpdateDashUI()
     {
         float fillamount = (currentdashes + (rechargetimer / dashrecharge)) / maxdashes;
@@ -140,6 +146,11 @@ public class player_movement : MonoBehaviour
     {
         isdashing = true;
         currentdashes--;
+        
+        if (audiosource != null && dashaudio != null)
+        {
+            audiosource.PlayOneShot(dashaudio);
+        }
         
         
         Vector3 dashdir = movement != Vector3.zero ? movement.normalized : transform.forward;

@@ -24,8 +24,9 @@ public class Enemy : MonoBehaviour
         {
             Destroy(other.gameObject);
             Game_Over.gameover = true; //once player is dead the gameover screen will show.
+            Count_down_Timer.StopAllMusic();
             GameObject.Find("Timer").SetActive(false); // set the timer and score hidden 
-            GameObject.Find("Score").SetActive(false);
+            //GameObject.Find("Score").SetActive(false);
         }
         
         //destory bullet and kills enemy and scores

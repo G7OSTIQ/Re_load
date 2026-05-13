@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Count_down_Timer : MonoBehaviour
 {
@@ -9,6 +10,24 @@ public class Count_down_Timer : MonoBehaviour
     public GameObject score_Text;
     public TMP_Text timer_text;
     public float gameplay_timer = 180f;
+
+    public AudioSource backgroundAudioSource; 
+    public AudioSource countdownAudioSource; 
+    public AudioClip countdownsound;
+    public AudioClip backgroundmusic;
+    public AudioMixer gameMixer;
+    public float fadeDuration = 10f;
+    private bool soundplayed = false;
+    public static bool countdownStarted = false;
+
+    void Start()
+    {
+        backgroundAudioSource.clip = backgroundmusic;
+        backgroundAudioSource.loop = true;
+        backgroundAudioSource.Play();
+        
+        gameMixer.SetFloat("MusicVolume", -5f);
+    }
     
 
     // Update is called once per frame
@@ -16,6 +35,13 @@ public class Count_down_Timer : MonoBehaviour
     {
         gameplay_timer = Math.Max(gameplay_timer - Time.deltaTime, 0);
         timer_text.text = gameplay_timer.ToString("0");
+        
+        if (gameplay_timer <= 36f && !soundplayed)
+        {
+            soundplayed = true;
+            countdownStarted = true;
+            StartCoroutine(FadeOutAndPlayCountdown());
+        }
 
         if (gameplay_timer <= 0) // What this does when the count down hit 0 the player will die
         {
@@ -31,5 +57,42 @@ public class Count_down_Timer : MonoBehaviour
                 score_Text.SetActive(false);
             }
         }
+    }
+    
+    private System.Collections.IEnumerator FadeOutAndPlayCountdown()
+    {
+        float currentVolume;
+        gameMixer.GetFloat("MusicVolume", out currentVolume);
+
+        // fade out background music
+        float timer = 0f;
+        while (timer < fadeDuration)
+        {
+            timer += Time.deltaTime;
+            float newVolume = Mathf.Lerp(currentVolume, -30f, timer / fadeDuration); // the amout of vol will go down slowly
+            gameMixer.SetFloat("MusicVolume", newVolume);
+            yield return null;
+        }
+
+        backgroundAudioSource.Stop();
+        
+        countdownAudioSource.clip = countdownsound;
+        countdownAudioSource.Play();
+
+        gameMixer.SetFloat("MusicVolume", currentVolume);
+    }
+    
+    public static void StopAllMusic()
+    {
+        Count_down_Timer timer = FindObjectOfType<Count_down_Timer>();
+        if (timer == null) return;
+        timer.StopAllCoroutines();
+
+        if (countdownStarted)
+        {
+            timer.backgroundAudioSource.Stop();
+            timer.countdownAudioSource.Stop();
+        }
+        countdownStarted = false; // resets the audio mixer
     }
 }
