@@ -84,7 +84,7 @@ public class Count_down_Timer : MonoBehaviour
     
     public static void StopAllMusic()
     {
-        Count_down_Timer timer = FindObjectOfType<Count_down_Timer>();
+        Count_down_Timer timer = FindAnyObjectByType<Count_down_Timer>();
         if (timer == null) return;
         timer.StopAllCoroutines();
 

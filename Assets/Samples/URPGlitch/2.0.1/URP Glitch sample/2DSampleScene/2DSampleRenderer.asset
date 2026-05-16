@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de640fe3d0db1804a85f9fc8f5cadab6, type: 3}
-  m_Name: PC_Renderer
+  m_Script: {fileID: 11500000, guid: 11145981673336645838492a2d98e247, type: 3}
+  m_Name: 2DSampleRenderer
   m_EditorClassIdentifier: 
   debugShaders:
     debugReplacementPS: {fileID: 4800000, guid: cf852408f2e174538bcd9b7fda1c5ae7, type: 3}
@@ -23,41 +23,39 @@ MonoBehaviour:
     probeVolumeSamplingDebugShader: {fileID: 4800000, guid: 8f96cd657dc40064aa21efcc7e50a2e7, type: 3}
     probeSamplingDebugMesh: {fileID: -3555484719484374845, guid: 57d7c4c16e2765b47a4d2069b311bffe, type: 3}
     probeSamplingDebugTexture: {fileID: 2800000, guid: 24ec0e140fb444a44ab96ee80844e18e, type: 3}
-    probeVolumeBlendStatesCS: {fileID: 7200000, guid: b9a23f869c4fd45f19c5ada54dd82176, type: 3}
+    probeVolumeBlendStatesCS: {fileID: 0}
   m_RendererFeatures:
-  - {fileID: 7833122117494664109}
-  - {fileID: 924153626514627630}
-  - {fileID: 2852174053878040404}
-  m_RendererFeatureMap: ad6b866f10d7b46c2e1c4bb2d340d30c5487fcc630f59427
-  m_UseNativeRenderPass: 1
-  xrSystemData: {fileID: 0}
-  postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
-  m_AssetVersion: 3
-  m_PrepassLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_OpaqueLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_TransparentLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_DefaultStencilState:
-    overrideStencilState: 0
-    stencilReference: 1
-    stencilCompareFunction: 3
-    passOperation: 2
-    failOperation: 0
-    zFailOperation: 0
-  m_ShadowTransparentReceive: 1
-  m_RenderingMode: 2
-  m_DepthPrimingMode: 0
-  m_CopyDepthMode: 0
-  m_DepthAttachmentFormat: 0
-  m_DepthTextureFormat: 0
-  m_AccurateGbufferNormals: 0
-  m_IntermediateTextureMode: 0
---- !u!114 &924153626514627630
+  - {fileID: 6440832652464174910}
+  - {fileID: 4146212859414217239}
+  m_RendererFeatureMap: 3e37dd232c6f625917828ac8a04e8a39
+  m_UseNativeRenderPass: 0
+  m_TransparencySortMode: 0
+  m_TransparencySortAxis: {x: 0, y: 1, z: 0}
+  m_HDREmulationScale: 1
+  m_LightRenderTextureScale: 0.5
+  m_LightBlendStyles:
+  - name: Multiply
+    maskTextureChannel: 0
+    blendMode: 1
+  - name: Additive
+    maskTextureChannel: 0
+    blendMode: 0
+  - name: Multiply with Mask
+    maskTextureChannel: 1
+    blendMode: 1
+  - name: Additive with Mask
+    maskTextureChannel: 1
+    blendMode: 0
+  m_UseDepthStencilBuffer: 1
+  m_UseCameraSortingLayersTexture: 0
+  m_CameraSortingLayersTextureBound: -1
+  m_CameraSortingLayerDownsamplingMethod: 0
+  m_MaxLightRenderTextureCount: 16
+  m_MaxShadowRenderTextureCount: 1
+  m_PostProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
+  m_DefaultMaterialType: 0
+  m_DefaultCustomMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+--- !u!114 &1510754652310292428
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -66,13 +64,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7b51d34ff9fa60499f5f35735de5c90, type: 3}
-  m_Name: AnalogGlitchRenderFeature
-  m_EditorClassIdentifier: URPGlitch::URPGlitch.AnalogGlitchRenderFeature
+  m_Script: {fileID: 11500000, guid: a291dcae73c55054db415d030d1728a0, type: 3}
+  m_Name: NewPostProcessEffectRendererFeature
+  m_EditorClassIdentifier: 
   m_Active: 1
-  anaglogGlitchShader: {fileID: 4800000, guid: 97d9be06c8e6c1e4781abe10d57474a8, type: 3}
-  renderPassEvent: 500
---- !u!114 &2852174053878040404
+  m_Material: {fileID: 2100000, guid: 78a08787ca30045abb69f6f7dd878e09, type: 2}
+--- !u!114 &4146212859414217239
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -83,12 +80,12 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d97da06d1b4e6e64e837fe2d4f512162, type: 3}
   m_Name: DigitalGlitchFeature
-  m_EditorClassIdentifier: URPGlitch::URPGlitch.DigitalGlitchFeature
+  m_EditorClassIdentifier: 
   m_Active: 1
   shader: {fileID: 4800000, guid: f445ed039be4e2c4c81930580ce0fa68, type: 3}
   compatShader: {fileID: 4800000, guid: 2f7db6c094d160148aa3595fd806f507, type: 3}
   renderPassEvent: 500
---- !u!114 &7833122117494664109
+--- !u!114 &6440832652464174910
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,20 +94,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f62c9c65cf3354c93be831c8bc075510, type: 3}
-  m_Name: ScreenSpaceAmbientOcclusion
+  m_Script: {fileID: 11500000, guid: d7b51d34ff9fa60499f5f35735de5c90, type: 3}
+  m_Name: AnalogGlitchRenderFeature
   m_EditorClassIdentifier: 
   m_Active: 1
-  m_Settings:
-    AOMethod: 0
-    Downsample: 0
-    AfterOpaque: 0
-    Source: 1
-    NormalSamples: 1
-    Intensity: 0.4
-    DirectLightingStrength: 0.25
-    Radius: 0.3
-    Samples: 1
-    BlurQuality: 0
-    Falloff: 100
-    SampleCount: -1
+  anaglogGlitchShader: {fileID: 4800000, guid: 97d9be06c8e6c1e4781abe10d57474a8, type: 3}
+  renderPassEvent: 500

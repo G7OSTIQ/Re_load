@@ -287,7 +287,7 @@ Transform:
   m_GameObject: {fileID: 96343266}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -36.5, y: 0.51, z: 22.3}
+  m_LocalPosition: {x: -36.5, y: 0.51, z: 28.1}
   m_LocalScale: {x: 2.7266963, y: 2.7266963, z: 2.7266963}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2813,6 +2813,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1430162441}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &668535976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 668535977}
+  m_Layer: 0
+  m_Name: Glitch_Volsume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &668535977
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668535976}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 789.76215, y: 0.00003, z: 1580.8666}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2046971599}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &689706766
 GameObject:
   m_ObjectHideFlags: 0
@@ -5030,7 +5062,6 @@ GameObject:
   - component: {fileID: 1298616008}
   - component: {fileID: 1298616007}
   - component: {fileID: 1298616006}
-  - component: {fileID: 1298616010}
   m_Layer: 0
   m_Name: ground
   m_TagString: ground
@@ -5132,20 +5163,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1298616010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1298616005}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23e5dc5410dfcab4fa1a83627366fc6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Ground_Colour
-  groundmaterial: {fileID: 2100000, guid: f9402d400b550074f81373807c0318f9, type: 2}
-  countdowntimer: {fileID: 0}
 --- !u!1 &1306521579
 GameObject:
   m_ObjectHideFlags: 0
@@ -5588,6 +5605,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 135238869}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1353483276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1353483278}
+  - component: {fileID: 1353483277}
+  m_Layer: 0
+  m_Name: The_Glitch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1353483277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353483276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d02caa256a7202e4388cf1bfd28dcf19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Glitch_Effect
+  glitchvolume: {fileID: 2046971600}
+  countdowntimer: {fileID: 553873171}
+--- !u!4 &1353483278
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353483276}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 789.76215, y: 0.00003, z: 1580.8666}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1355566851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5840,7 +5903,7 @@ Transform:
   m_GameObject: {fileID: 1424958732}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9862923, z: -0, w: 0.16500813}
-  m_LocalPosition: {x: -31.9, y: 0.51, z: -33.7}
+  m_LocalPosition: {x: -28.8, y: 0.51, z: -42.8}
   m_LocalScale: {x: 1.7830514, y: 1.7830514, z: 1.7830514}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8804,6 +8867,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2098510618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2046971598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2046971599}
+  - component: {fileID: 2046971600}
+  m_Layer: 0
+  m_Name: glitch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2046971599
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046971598}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 668535977}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2046971600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046971598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.Volume
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 0
+  sharedProfile: {fileID: 11400000, guid: e3888b8fed065e84a84d87235bfcaa53, type: 2}
 --- !u!1 &2059740384
 GameObject:
   m_ObjectHideFlags: 0
@@ -9149,7 +9261,7 @@ Transform:
   m_GameObject: {fileID: 2098510614}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -36.5, y: 0.51, z: -6.3}
+  m_LocalPosition: {x: -17.6, y: 0.51, z: -6.3}
   m_LocalScale: {x: 2.7266963, y: 2.7266963, z: 2.7266963}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9573,3 +9685,5 @@ SceneRoots:
   - {fileID: 1355566851}
   - {fileID: 1443868561}
   - {fileID: 1811140910}
+  - {fileID: 1353483278}
+  - {fileID: 668535977}
