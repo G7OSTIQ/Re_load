@@ -71,7 +71,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: URPGlitch::URPGlitch.AnalogGlitchRenderFeature
   m_Active: 1
   anaglogGlitchShader: {fileID: 4800000, guid: 97d9be06c8e6c1e4781abe10d57474a8, type: 3}
-  renderPassEvent: 500
+  renderPassEvent: 600
 --- !u!114 &2852174053878040404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Active: 1
   shader: {fileID: 4800000, guid: f445ed039be4e2c4c81930580ce0fa68, type: 3}
   compatShader: {fileID: 4800000, guid: 2f7db6c094d160148aa3595fd806f507, type: 3}
-  renderPassEvent: 500
+  renderPassEvent: 600
 --- !u!114 &7833122117494664109
 MonoBehaviour:
   m_ObjectHideFlags: 0
