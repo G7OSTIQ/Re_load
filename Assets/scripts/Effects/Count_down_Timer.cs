@@ -10,7 +10,6 @@ public class Count_down_Timer : MonoBehaviour
     public GameObject score_Text;
     public TMP_Text timer_text;
     public float gameplay_timer = 180f;
-
     public AudioSource backgroundAudioSource; 
     public AudioSource countdownAudioSource; 
     public AudioClip countdownsound;
@@ -36,7 +35,7 @@ public class Count_down_Timer : MonoBehaviour
         gameplay_timer = Math.Max(gameplay_timer - Time.deltaTime, 0);
         timer_text.text = gameplay_timer.ToString("0");
         
-        if (gameplay_timer <= 36f && !soundplayed)
+        if (gameplay_timer <= 36f && !soundplayed) //36sec because of the fading effect from background to countdown
         {
             soundplayed = true;
             countdownStarted = true;
@@ -55,6 +54,8 @@ public class Count_down_Timer : MonoBehaviour
                 Game_Over.gameover = true;
                 Timer_Screen.SetActive(false); //This to hide ui once timer runs out
                 score_Text.SetActive(false);
+                
+                
             }
         }
     }
@@ -64,7 +65,7 @@ public class Count_down_Timer : MonoBehaviour
         float currentVolume;
         gameMixer.GetFloat("MusicVolume", out currentVolume);
 
-        // fade out background music
+        // fades out the background music
         float timer = 0f;
         while (timer < fadeDuration)
         {
@@ -93,6 +94,6 @@ public class Count_down_Timer : MonoBehaviour
             timer.backgroundAudioSource.Stop();
             timer.countdownAudioSource.Stop();
         }
-        countdownStarted = false; // resets the audio mixer
+        countdownStarted = false; 
     }
 }
