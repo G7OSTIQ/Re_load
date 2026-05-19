@@ -37,11 +37,7 @@ public class deleting_bombs_when_touching : MonoBehaviour
         {
             if (fallingParticles != null)
             {
-                ParticleSystem particles = Instantiate(
-                    fallingParticles,
-                    transform.position,
-                    Quaternion.identity
-                );
+                ParticleSystem particles = Instantiate(fallingParticles, transform.position, Quaternion.identity);
                 particles.Play();
                 Destroy(particles.gameObject, 2f);
             }

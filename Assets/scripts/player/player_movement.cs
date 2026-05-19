@@ -125,8 +125,7 @@ public class player_movement : MonoBehaviour
     //this changes the colour of the dashing ui
     void UpdateDashUI()
     {
-        float fillamount = (currentdashes + (rechargetimer / dashrecharge)) / maxdashes;
-        dashbar.fillAmount = fillamount;
+        float fillamount = (currentdashes + (rechargetimer / dashrecharge)) / maxdashes; dashbar.fillAmount = fillamount;
         
         if (currentdashes == 0)
         {
@@ -147,7 +146,7 @@ public class player_movement : MonoBehaviour
         isdashing = true;
         currentdashes--;
         
-        if (audiosource != null && dashaudio != null)
+        if (audiosource != null && dashaudio != null) //plays the dash audio
         {
             audiosource.PlayOneShot(dashaudio);
         }
