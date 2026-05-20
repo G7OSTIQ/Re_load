@@ -162,7 +162,7 @@ GameObject:
   - component: {fileID: 95844407}
   - component: {fileID: 95844406}
   m_Layer: 5
-  m_Name: dush_border
+  m_Name: dash_border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -177,7 +177,7 @@ RectTransform:
   m_GameObject: {fileID: 95844404}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6476689, y: 0.6476689, z: 0.6476689}
+  m_LocalScale: {x: 0.6476689, y: 0.29023033, z: 0.6476689}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1467699377}
@@ -186,7 +186,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -49.9}
+  m_AnchoredPosition: {x: 0, y: -72.583}
   m_SizeDelta: {x: 500, y: 70}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &95844406
@@ -4956,7 +4956,7 @@ GameObject:
   - component: {fileID: 1279461994}
   - component: {fileID: 1279461995}
   m_Layer: 5
-  m_Name: Dush_bar
+  m_Name: Dash_bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
